@@ -5,6 +5,7 @@ import androidx.activity.ComponentActivity
 import androidx.activity.compose.setContent
 import androidx.activity.enableEdgeToEdge
 import androidx.core.view.WindowCompat
+import com.mmunoz.scribbledash.feature_difficulty.presentation.DifficultyScreen
 import com.mmunoz.scribbledash.feature_home.presentation.HomeScreen
 import com.mmunoz.scribbledash.presentation.designsystem.ScribbleDashTheme
 
@@ -18,7 +19,7 @@ class MainActivity : ComponentActivity() {
             .isAppearanceLightStatusBars = true
         setContent {
             ScribbleDashTheme {
-                HomeScreen()
+                DifficultyScreen()
             }
         }
     }
